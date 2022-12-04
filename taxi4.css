@@ -1,0 +1,199 @@
+
+body{
+    background-color: powderblue;
+}
+.main-container {
+    position: absolute;
+    width: 98%;
+    top: 4px;
+    height: 98%;
+    background-color: whitesmoke;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-rows: 15% 83%;
+    row-gap: 4px;
+}
+.header-main {
+    grid-row: 1 / 2;
+    border: 2px solid black;
+}
+#header-main-1, #header-main-2, #header-main-3 {
+    position: absolute;
+    left: 550px;
+    top: 15px;
+
+}
+.body-container {
+    grid-row: 2 / 2;
+    border: 2px solid purple;
+}
+.slider {
+    border: 2px solid brown;
+    position:absolute;
+    left : 50px;
+    top: 110px;
+}
+.slideimage {
+    width: 200px;
+    height: 250px;
+}
+.display-left, .display-right {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border:  none;
+    font-size: 30px;
+}
+.display-right{
+    left: 90px;
+}
+.display-left:hover, .display-right:hover {
+    background-color: greenyellow;
+}
+
+#hatchback-1, #sedan-1, #suv-1 {
+    position: absolute;
+    top: 460px;
+    left: 20px;
+}
+
+#hatchback-2, #sedan-2, #suv-2 {
+    position: absolute;
+    top: 460px;
+    left: 210px;
+}
+.carImage {
+    width: 150px;
+    height: 150px;
+}
+#select-button, #clear-button {
+    position: absolute;
+    left: 600px;
+    top: 550px;
+    width: 120px;
+    height: 50px;
+    border:  none;
+    border-radius: 10px;
+    background-color: green;
+    color: whitesmoke
+}
+#clear-button {
+    top: 450px;
+    background-color: red;
+}
+#booked-details {
+    position: absolute;
+    overflow-y: hidden;
+    left :400px;
+    height: 80px;
+    width: 320px;
+    border: black;
+}
+#booked-details:hover {
+    overflow-y: scroll;
+}
+#Booking {
+    position: absolute;
+    top:110px;
+    left: 950px;
+    border: 2px solid red;
+    width: 350px;
+    height: 500px;
+}
+#Booking-head{
+    color: green;
+    position: relative;   
+    left: 20px;
+    top: 50px;
+    font-size: 18px;
+}
+#selectDate {
+    font-size: 20px;
+    color: Blue;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+#enddate {
+    font-size: 14px;
+    color: Blue;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#arrival {
+    position: relative;
+    top: 20px;
+}
+
+
+input {
+    position: relative;
+    left: 10px;
+    border: 2px solid darkblue;
+    background-color: whitesmoke;
+    color: Blue;
+    width: 150px;
+}
+
+#submit {
+    position: relative;
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    width: 150px;
+    top: 250px;
+    left: 100px;
+}
+#name {
+    position: relative;
+    font-size: 20px;
+    left: 75px;
+    top: 80px;
+    color: darkblue;
+}
+
+#nameField {
+    position: relative;
+    font-size: 20px;
+    left: 180px;
+    top: 56px;
+    color: darkblue;
+}
+
+#error-message {
+    position: absolute;
+    left: 550px;
+    top: 300px;
+    width: 180px;
+    border: 2px solid blue;
+}
+#sucess-message {
+    border: 2px solid black;
+    position: absolute;
+    left: 550px;
+    top: 300px;
+    width: 200px;
+}
+
+#bookedtable {
+    position: absolute; 
+    top: 150px;
+    left: 400px;
+    width: 500px;
+    border: 2px solid black
+}
+th {
+    border: 1px solid black;
+    font-size: 18px;
+    width: 300px;
+}
+td {
+    border: 1px solid black;
+    font-size: 12px;
+    width: 500px;
+}
+h3 {
+    text-align:  center;
+}

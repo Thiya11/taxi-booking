@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href = "G:/JS/taxi4.css">
+    <title>Taxi Booking</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-main" id="header">
+            <div id="header-main-1">
+                <h2>SELECT CAR TYPE</h2>
+            </div>
+            <div id="header-main-2">
+                <h2>CHOOSE YOUR CAR</h2>
+            </div>
+            <div id="header-main-3">
+                <h2>BOOK YOUR CAR</h2>
+            </div>
+            <div id = "booked-details">
+            </div>
+        </div>
+        <div class="body-container">
+        <div id="selecting-car-type">
+            <div class="slider">
+                <img class="slideimage" onclick = "hatchSelect()"src="https://st3.depositphotos.com/4191315/12530/v/450/depositphotos_125305002-stock-illustration-car-silhouette-black-details-vector.jpg">
+                <img class="slideimage" onclick = "sedanSelect()" src="https://shop.digitemb.com/wp-content/uploads/2019/06/V-20579-Elegant-Sedan-Silhouette-Vector-Art.jpg">
+                <img class="slideimage" onclick="suvSelect()" src="https://image.shutterstock.com/image-vector/black-silhouette-suv-260nw-461694214.jpg">
+                 <button class="display-left" onclick="plusDivs(-1)">&#10094</button>
+                 <button class="display-right" onclick="plusDivs(+1)">&#10095</button>
+                </div>
+            </div>
+        <div id = "selecting-car">
+            <div id="hatchback-list">
+                <div id="hatchback-1">
+                    <img class="carImage" onclick="swiftsel()" src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/54399/exterior-right-front-three-quarter-10.jpeg?q=75">
+                </div>
+                <div id="hatchback-2">    
+                    <img class="carImage" onclick="tiagosel()" src="https://auto.economictimes.indiatimes.com/files/retail_files/tiago-1502362418-prod-var.png">
+                </div>
+            </div>
+            <div id="sedan-list">
+                <div id = "sedan-1">
+                    <img class="carImage" onclick="rapidsel()" src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/49980/rapid-tsi-at-exterior-right-front-three-quarter-3.jpeg?q=75">
+                </div>
+                <div id="sedan-2">
+                    <img class="carImage" onclick="chevysel()" src="https://ymimg1.b8cdn.com/resized/car_model/2555/pictures/2916576/mobile_listing_main_01.jpg">
+                </div>
+            </div>
+            <div id="suv-list">
+                <div id="suv-1">
+                  <img class="carImage" onclick="innovasel()" src="https://s.yimg.com/uu/api/res/1.2/EUzvAGSxq02FS_UZHYa81w--~B/aD01Njg7dz04NTI7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/carmudi.com.ph/8e477a5c4d32c90981a0e4b24288abcd">
+                </div>
+                <div id="suv-2">
+                    <img class="carImage" onclick="scorpiosel()" src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/31883/scorpio-exterior-left-front-three-quarter.jpeg?q=75&wm=1">
+                </div>
+            </div>
+            <div>
+                <button id= "select-button" onclick="carSelect()">Show Booked Cars</button>
+            </div>
+            <!-- <div>
+                <button id="clear-button" onclick="clear()">Clear Booked Data</button>
+            </div> -->
+        </div>
+        <div id="Booking">
+        <div id = "Booking-head">
+            Finish Booking by selecting Date and time
+        </div>
+         <div id="name">
+            Car Name:   
+        </div>
+        <div id="nameField">
+
+        </div>
+        <div id="selectDate">
+           <label> Departure:</label>       <input  class= "date" id="date" type = "datetime-local">
+        </div>
+        <div id = "selectDate">
+           <label id="arrival"> Arrival: </label>       <input class="enddate" id = "enddate" type="datetime-local"> 
+        </div>
+        <div id="finish">
+            <button id="submit" onclick="submit()">Finish Booking</button>
+        </div>
+        </div>
+        <div id = "bookedtable">
+            <h3>Booked Cars</h3>
+            <table>
+                <thead>
+                    <th>Car Name</th>
+                    <th> From Date & Time</th>
+                    <th> To Date & Time</th>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class = "messages">
+    <div id = "error-message" onclick="error()">
+        <h2> Invalid Format</h2>
+        <span> Click Here To Change</span>
+    </div>
+    <div id = "sucess-message" onclick="sucess()">
+        <h2> Already Booked</h2>
+        <span> Click Here To Change</span>
+    </div>
+    </div>
+    <script src="G:/JS/taxi4.js"></script>
+</body>
+</html>
